@@ -1,9 +1,15 @@
+[user]
+  name = Diego Rabatone Oliveira
+  email = diraol@diraol.eng.br
 [alias]
   co = checkout
   ci = commit
   br = branch
   st = status -s
+  ps = push
+  pl = pull
   ff = merge --ff-only
+  lg = log --decorate --graph --pretty=format:\"%Cgreen%h%Creset %s %Cblue(%an)%Creset\"
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   changelog = log --pretty=format:\" * %s\"
   sg = diff --staged
@@ -14,19 +20,22 @@
   amend = commit --amend
 [color]
   ui = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
 [core]
+  whitespace = indent-with-non-tab
   excludesfile = ~/.gitignore
+  editor = vim
 [github]
-  user = barraponto
+  user = diraol
 [help]
   autocorrect = 20
 [push]
   default = current
 [receive]
   denyNonFastForwards = true
-[user]
-  name = Capi Etheriel
-  email = barraponto@gmail.com
 [url "http://git.drupal.org/project/"]
   insteadOf = drupal://
 [url "http://git.drupal.org/sandbox/"]

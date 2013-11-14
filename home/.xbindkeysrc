@@ -65,9 +65,17 @@
 #"rxvt"
 #  Control + b:2 + Release
 
-"$HOME/.local/bin/touchpad-toggle"
-    m:0x0 + c:248
-        NoSymbol
+#"$HOME/.local/bin/touchpad-toggle"
+#    m:0x0 + c:248
+#        NoSymbol
+
+###### Hardware volume keys
+"/usr/bin/amixer -q set Master toggle"
+ XF86AudioMute
+"/usr/bin/amixer -q set Master 5%-"
+ XF86AudioLowerVolume
+"/usr/bin/amixer -q set Master 5%+"
+ XF86AudioRaiseVolume
 
 ##################################
 # End of xbindkeys configuration #
