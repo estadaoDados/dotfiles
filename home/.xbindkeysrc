@@ -69,13 +69,13 @@
 #    m:0x0 + c:248
 #        NoSymbol
 
-###### Hardware volume keys
-"/usr/bin/amixer -q set Master toggle"
- XF86AudioMute
-"/usr/bin/amixer -q set Master 5%-"
- XF86AudioLowerVolume
-"/usr/bin/amixer -q set Master 5%+"
- XF86AudioRaiseVolume
+###### Hardware volume keys for Thinkpad X201
+#"/usr/bin/amixer -q set Master toggle"
+# XF86AudioMute
+#"/usr/bin/amixer -q set Master 5%-"
+# XF86AudioLowerVolume
+#"/usr/bin/amixer -q set Master 5%+"
+# XF86AudioRaiseVolume
 
 ##################################
 # End of xbindkeys configuration #
