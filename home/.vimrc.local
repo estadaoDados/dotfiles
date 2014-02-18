@@ -7,7 +7,7 @@ set shiftround                " always round indentation to shiftwidth
 set mouse=                    " disable mouse
 
 "set t_Co=16                   " set vim terminal to 16 color mode
-"let g:CSApprox_loaded=1       " disable csapprox
+let g:CSApprox_loaded=1       " disable csapprox
 "let g:solarized_termcolors=16 " tell solarized to trust the terminal 16 colors
 color peaksea               " use the solarized colorscheme
 "set background=light          " match light-solarized terminal emulators
