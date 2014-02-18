@@ -1,3 +1,10 @@
+STATUS
+======
+At this time this dotfiles are not updated and are not being used.
+
+My current dotfiles are on the ''homesick'' branch, using the
+homesick software. Explanations on the branch readme.
+
 HOW TO USE
 ==========
 
