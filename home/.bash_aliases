@@ -2,7 +2,6 @@
 alias diraol_ssh='ssh diraol@diraol.eng.br'
 alias polignu_ssh='ssh polignu@polignu.org'
 alias radar_ssh='ssh radarparlamentar@radarparlamentar.polignu.org'
-alias amazon_gnuteca='ssh -i ~/devel/awsKeys/awskey_gnuteca.pem ubuntu@ec2-177-71-154-142.sa-east-1.compute.amazonaws.com'
 
 #EnvUpdate
 function vimspfupdate {
