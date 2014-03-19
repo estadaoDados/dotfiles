@@ -1,4 +1,4 @@
-[submodule "home/.spf13"]
-    path = home/.spf13
-    url = git@github.com:estadaoDados/spf13-vim.git
-    branch = 3.0
+[submodule "home/.spf13-vim"]
+	path = home/.spf13-vim
+	url = https://github.com/estadaoDados/spf13-vim.git
+	branch = "3.0"

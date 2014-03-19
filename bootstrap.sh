@@ -27,7 +27,7 @@ clone_vundle() {
 }
 
 create_symlinks() {
-  endpath="$HOME/.spf13"
+  endpath="$HOME/.spf13-vim"
 
   if [ ! -d "$endpath/.vim/bundle" ]; then
     mkdir -p "$endpath/.vim/bundle"
