@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Instalando ctags"
+echo "sudo apt-get install exuberant-ctags"
+sudo apt-get install exuberant-ctags
 git submodule update --init
 homesick symlink dotfiles
 
