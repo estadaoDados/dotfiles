@@ -1,15 +1,9 @@
-#SSH
-alias diraol_ssh='ssh diraol@diraol.eng.br'
-alias polignu_ssh='ssh polignu@polignu.org'
-alias radar_ssh='ssh radarparlamentar@radarparlamentar.polignu.org'
+DATA=$(date +"%Y_%m_%d")
 
-#EnvUpdate
-function vimspfupdate {
-    curDir=$(pwd)
-    SPF13vimHome="$HOME/.spf13-vim-3"
-    cd $SPF13vimHome
-    git pull
-    git submodule sync
-    git submodule update --init --recursive
-    cd $curDir
-}
+AMAZON_BLOG_HOST='54.232.107.55' #'blog.estadaodados.com'
+
+#SSH
+alias blog_ssh_amazon='ssh -v4 -i ~/.ssh/edados_blog_amazon.pem ubuntu@$AMAZON_BLOG_HOST'
+
+#MYSQL
+alias blog_mysql_amazon='mysql -ublog_user -p -h$AMAZON_BLOG_HOST'
