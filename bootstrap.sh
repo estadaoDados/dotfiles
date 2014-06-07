@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "1 - Instalando pacotes básicos iniciais"
-sudo aptitude install ruby rdoc irb git
+sudo aptitude install -y ruby rdoc irb git
 
 echo "2 - Baixando RubyGems no diretório ~/tools/"
 mkdir -p ~/tools
@@ -23,7 +23,7 @@ homesick clone https://github.com/estadaodados/dotfiles.git
 
 echo "Instalando ctags"
 echo "sudo apt-get install exuberant-ctags"
-sudo apt-get install exuberant-ctags
+sudo apt-get install exuberant-ctags -y
 git submodule update --init
 homesick symlink dotfiles
 
