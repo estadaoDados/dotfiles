@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "1 - Instalando pacotes básicos iniciais"
-sudo aptitude install -y ruby rdoc irb git
+sudo aptitude install -y ruby rdoc irb git vim
 
 echo "2 - Baixando RubyGems no diretório ~/tools/"
 mkdir -p ~/tools
