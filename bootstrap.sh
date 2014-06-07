@@ -15,14 +15,17 @@ echo "4 - Instalando o RubyGems"
 cd rubygems-2.2.2
 sudo ruby setup.rb all
 
-echo "5 - Instalando o homesick"
+echo "5 - Removendo pasta do rubygems não mais necessária"
+cd ..
+rm -rf rubygems*
+
+echo "6 - Instalando o homesick"
 sudo gem install homesick
 
-echo "6 - Clonando o repositório do estadão dados para dotfiles"
+echo "7 - Clonando o repositório do estadão dados para dotfiles"
 homesick clone https://github.com/estadaodados/dotfiles.git
 
-echo "Instalando ctags"
-echo "sudo apt-get install exuberant-ctags"
+echo "8 - Instalando ctags"
 sudo apt-get install exuberant-ctags -y
 git submodule update --init
 homesick symlink dotfiles
