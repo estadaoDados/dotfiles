@@ -6,18 +6,17 @@ sudo aptitude install -y ruby rdoc irb git vim
 echo "2 - Baixando RubyGems no diretório ~/tools/"
 mkdir -p ~/tools
 cd ~/tools
-wget http://production.cf.rubygems.org/rubygems/rubygems-2.2.2.tgz
+wget http://production.cf.rubygems.org/rubygems/rubygems-2.3.0.tgz
 
 echo "3 - Extraindo o pacote RubyGems"
-tar xzf rubygems-2.2.2.tgz
+tar xzf rubygems-2.3.0.tgz
 
 echo "4 - Instalando o RubyGems"
-cd rubygems-2.2.2
+cd rubygems-2.3.0
 sudo ruby setup.rb all
 
-echo "5 - Removendo pasta do rubygems não mais necessária"
-cd ..
-rm -rf rubygems*
+echo "5 - Removendo pasta tools não mais necessária"
+rm -rf ~/tools
 
 echo "6 - Instalando o homesick"
 sudo gem install homesick
