@@ -7,3 +7,8 @@ alias blog_ssh_amazon='ssh -v4 -i ~/.ssh/edados_blog_amazon.pem ubuntu@$AMAZON_B
 
 #MYSQL
 alias blog_mysql_amazon='mysql -ublog_user -p -h$AMAZON_BLOG_HOST'
+
+#DigitalOceanMainServer
+alias digitalocean='ssh edados@162.243.243.150'
+alias digitaloceanroot='ssh root@162.243.243.150'
+alias devedados='ssh edados@dev.estadaodados.com'
