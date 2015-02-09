@@ -1,16 +1,37 @@
 #!/usr/bin/env bash
 
-echo "Instalando ctags"
-echo "sudo apt-get install exuberant-ctags"
-sudo apt-get install exuberant-ctags
+echo "1 - Instalando pacotes básicos iniciais"
+sudo aptitude install -y ruby rdoc irb git vim
+
+echo "2 - Baixando RubyGems no diretório ~/tools/"
+mkdir -p ~/tools
+cd ~/tools
+wget http://production.cf.rubygems.org/rubygems/rubygems-2.3.0.tgz
+
+echo "3 - Extraindo o pacote RubyGems"
+tar xzf rubygems-2.3.0.tgz
+
+echo "4 - Instalando o RubyGems"
+cd rubygems-2.3.0
+sudo ruby setup.rb all
+
+echo "5 - Removendo pasta tools não mais necessária"
+rm -rf ~/tools
+
+echo "6 - Instalando o homesick"
+sudo gem install homesick
+
+echo "7 - Clonando o repositório do estadão dados para dotfiles"
+homesick clone https://github.com/estadaodados/dotfiles.git
+
+echo "8 - Instalando ctags"
+sudo apt-get install exuberant-ctags -y
 git submodule update --init
 homesick symlink dotfiles
-
 
 git_uri='https://github.com/estadaoDados/spf13-vim.git'
 git_branch='3.0'
 VUNDLE_URI="https://github.com/gmarik/vundle.git"
-
 
 lnif() {
   if [ -e "$1" ]; then
